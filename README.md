@@ -312,7 +312,7 @@ The project implements enterprise **Java Database Connectivity (JDBC)** using th
 4. **`java.sql.CallableStatement`**: Invokes the PL/SQL Stored Procedure `SP_CREATE_BOOKING_AND_PAY` with `IN` and `OUT` parameters for atomic transactions.
 5. **ACID Transaction Management**: Manual transaction demarcation with `commit()` and `rollback()` inside catch blocks.
 
-### 3. How to Demonstrate JDBC to Faculty
+### 3.Demonstration of jdbc
 * **Method 1 (1-Click Launcher):** Double-click [`Run_JDBC_Demo.bat`](file:///C:/Users/manta/OneDrive/Desktop/WorkSphere/WorkSphere/Run_JDBC_Demo.bat) in the project root.
 * **Method 2 (Terminal Command):**
   ```powershell
@@ -322,19 +322,6 @@ The project implements enterprise **Java Database Connectivity (JDBC)** using th
   ```powershell
   java -cp ".;database/jdbc/ojdbc11.jar" database.jdbc.WorkSphereJDBC
   ```
-
----
-
-## 🎯 DA-II Rubric Alignment
-
-| Evaluation Module | Rubric Requirement | Project Implementation |
-|---|---|---|
-| **M-1: Backend & Constraints** | Key database operations & field constraints | 8 normalized tables, Primary Keys, Foreign Keys with Cascade rules, explicit `CHECK`, `UNIQUE`, and `NOT NULL` constraints. |
-| **M-2: Frontend Input Forms** | Form input fields mapped dynamically | Form modals for Members, Rooms, and Bookings; zero hardcoding; dynamic dropdowns populated from Oracle DB. |
-| **M-3: Database Connectivity & CRUD** | Connection via ODBC / JDBC / Driver with Insert, Update, and Delete action buttons | **Oracle JDBC Type-4 Thin Driver (`ojdbc11.jar`)** with real-time **Insert (Add)**, **Update**, and **Delete** buttons synced between the database and UI with transaction commits. |
-| **Special Feature** | "Type query and fetch it" | Integrated **Interactive SQL Console** allowing arbitrary `SELECT`, `JOIN`, and `GROUP BY` execution with instant tabular rendering. |
-
----
 
 ## 💻 Modern Consumer UI (Appspace-Inspired Design System)
 The presentation layer was remodeled into a clean, bright, white enterprise aesthetic inspired by industry leader **Appspace Conference Room Scheduling Software**:
